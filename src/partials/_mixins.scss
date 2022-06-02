@@ -17,7 +17,7 @@
 }
 
 @mixin type-p {
-	font-size: 3rem;
+	font-size: 1.6rem;
 }
 
 @mixin type-btn {
@@ -37,7 +37,8 @@
 }
 
 @mixin type-navItem {
-	font-size: 3rem;
+	font-size: 2.5rem;
+	font-weight: 500;
 }
 
 @mixin test-border {

@@ -3,6 +3,7 @@
 
 .step {
 	&3 &Media {
+		height: 90vh;
 		grid-column: 1 / 2;
 	}
 	&6 &Media {
@@ -12,7 +13,7 @@
 	&Nav {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		gap: $step-nav-item-gap;
 
