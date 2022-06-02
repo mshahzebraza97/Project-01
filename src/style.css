@@ -68,7 +68,6 @@ p {
   width: clamp(32rem, 95vw, 120rem);
   margin: 0 auto;
   padding: 0;
-  border: 1px dashed red;
   padding-bottom: 10rem;
 }
 
@@ -81,10 +80,6 @@ section + section {
   display: -ms-flexbox;
   display: flex;
   gap: 4rem;
-}
-
-.intro > * {
-  border: 1px dashed red;
 }
 
 .introSpacer {
@@ -105,11 +100,6 @@ section + section {
   gap: 4rem;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  border: 1px dashed red;
-}
-
-.step > * {
-  border: 1px dashed red;
 }
 
 .stepNav {
@@ -174,7 +164,6 @@ section + section {
   position: relative;
   font-size: 2.5rem;
   font-weight: 500;
-  border: 1px dashed red;
   height: 5rem;
   width: 5rem;
   display: -webkit-box;

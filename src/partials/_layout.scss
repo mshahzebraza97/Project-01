@@ -8,7 +8,6 @@
 	padding: 0;
 
 	// test styles
-	@include test-border;
 	padding-bottom: 10rem;
 }
 
@@ -22,7 +21,6 @@ section + section {
 	gap: $step-child-gap;
 
 	& > * {
-		@include test-border;
 	}
 	&Spacer {
 		flex: 0 1 25%;
@@ -42,7 +40,6 @@ section + section {
 	// align-items: stretch;
 
 	& > * {
-		@include test-border;
 	}
 
 	&Nav {
@@ -54,7 +51,6 @@ section + section {
 
 	// test styles
 	// background: $pastel-green;
-	@include test-border;
 	&:nth-child(odd) {
 		// background: $pastel-red;
 	}
