@@ -1,0 +1,45 @@
+// Typography
+
+@mixin type-base {
+	font-size: 1.6rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	line-height: 1.6;
+	color: $color-nute-20;
+}
+
+@mixin type-h1 {
+	font-size: 4rem;
+}
+
+@mixin type-h2 {
+	font-size: 3.25rem;
+}
+
+@mixin type-p {
+	font-size: 3rem;
+}
+
+@mixin type-btn {
+	margin-top: 3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	border: 2px solid $color-nute-30;
+	color: $color-nute-30;
+
+	&:hover {
+		background: $color-nute-30;
+		color: $color-nute-90;
+		transition: 0.2s ease all;
+	}
+}
+
+@mixin type-navItem {
+	font-size: 3rem;
+}
+
+@mixin test-border {
+	border: 1px dashed red;
+}

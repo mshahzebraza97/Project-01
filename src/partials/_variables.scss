@@ -1,0 +1,76 @@
+// variables
+
+// colors
+$text: #2b2b2b; // remove later
+$background: #fff; // remove later
+$blue-accent: #4bbef3;
+$color-dark-60: hsl(0, 0%, 40%);
+
+$color-nute-0: hsl(0, 0%, 0%);
+$color-nute-10: hsl(0, 0%, 10%);
+$color-nute-20: hsl(0, 0%, 20%);
+$color-nute-30: hsl(0, 0%, 30%);
+$color-nute-40: hsl(0, 0%, 40%);
+$color-nute-50: hsl(0, 0%, 50%);
+$color-nute-60: hsl(0, 0%, 60%);
+$color-nute-70: hsl(0, 0%, 70%);
+$color-nute-80: hsl(0, 0%, 80%);
+$color-nute-90: hsl(0, 0%, 90%);
+$color-nute-100: hsl(0, 0%, 100%);
+
+$color-dark-10: #0000001a; // remove later
+$color-secondary: #fff; // remove later
+$color-tertiary: #000; // remove later
+$primary-blue: #257ced; // remove later
+$primary-white: #fff; // remove later
+
+$pastel-red: #ffb3b3; // remove later
+$pastel-yellow: #fff8c6; // remove later
+$pastel-green: #d1f2d1; // remove later
+$pastel-blue: #b3d1ff; // remove later
+$pastel-purple: #d1d1f2; // remove later
+$pastel-orange: #ffd1b3; // remove later
+$pastel-pink: #ffb3d1; // remove later
+$pastel-brown: #d1b3b3; // remove later
+
+// end colors
+
+// sizes
+
+$breakpoint-mobile: 425px;
+$breakpoint-tablet: 768px;
+
+// Rectangle
+
+$container-width-min: 32rem;
+$container-width: 95vw;
+$container-width-max: 120rem;
+
+$step-child-gap: 4rem;
+$section-gap: 8rem;
+$section-height-min: 80vh;
+$step-nav-item-gap: 6rem;
+
+$step-body-grid-gap: 4rem;
+$step-body-col-size-max: 3fr;
+$step-body-col-size-min: 2fr;
+
+$section-step-block-width: 5.5rem;
+$section-step-block-height: 5.5rem;
+
+$window: 100vw;
+$main-content-width: 120rem;
+$margin-one-side: calc((#{$window} - #{$main-content-width}) / 2);
+$wrapper-content-length: 100rem;
+$wrapper-nav-length: calc(#{$main-content-width} - #{$wrapper-content-length});
+$wrapper-bg-length: calc(#{$wrapper-content-length} + #{$margin-one-side});
+$rect-height: 17.5rem;
+// Rectangle End
+
+$font-size-base: 62.5%;
+$column-gutter: 5rem;
+$column-width: calc($length-base * 12 + $column-gutter * 11);
+$page-margin: 30px;
+$bg-wrapper-height: 200px;
+$banner-height: 200px;
+$footer-banner-height: 200px;

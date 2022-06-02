@@ -1,0 +1,119 @@
+@import "../variables";
+@import "../mixins";
+
+.step {
+	&3 &Media {
+		grid-column: 1 / 2;
+	}
+	&6 &Media {
+		grid-column: 1 / 2;
+	}
+
+	&Nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: $step-nav-item-gap;
+
+		&Item {
+			background: $color-nute-90;
+			position: relative;
+			& + &::before {
+				background: $color-nute-90;
+				position: absolute;
+				content: "";
+				width: 0.3rem;
+				height: $step-nav-item-gap;
+				bottom: 100%;
+				transform: translateY(-0.1rem);
+			}
+
+			@include type-navItem;
+			@include test-border;
+			height: $section-step-block-height;
+			width: $section-step-block-width;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			border-radius: 50%;
+
+			position: relative;
+
+			&-active {
+				background: $blue-accent;
+			}
+			&-active ~ & {
+				// background: #000;
+				// content: "&#10004" !important;
+			}
+		}
+		&Link {
+			// flex: 1;
+
+			&::before {
+				content: "";
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&Body {
+		display: grid;
+		gap: 4rem;
+		grid-template-columns: 3fr 2fr 3fr;
+		grid-template-rows: 1fr;
+
+		& > * {
+			grid-row: 1 / 2;
+		}
+	}
+	&Media {
+		grid-column: 1/3;
+	}
+	&Image {
+		height: 100%;
+		width: 100%;
+	}
+	&Content {
+		grid-column: 2/4;
+
+		display: grid;
+		gap: 4rem;
+		grid-template-columns: 2fr 3fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+	}
+	&Article {
+		grid-column: 1/3;
+
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		gap: 2rem;
+
+		&Title {
+			grid-column: 1/3;
+
+			@include type-h2;
+		}
+		&Text {
+			grid-column: 1/3;
+			@include type-base;
+		}
+		&Btn {
+			justify-self: start;
+			grid-column: 2/3;
+
+			@include type-btn;
+		}
+	}
+}

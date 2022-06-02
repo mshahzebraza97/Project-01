@@ -1,0 +1,61 @@
+//  contains all the resets, colors, variables, mixins, and utility classes
+@import url("./variables");
+@import url("./mixins");
+
+.container {
+	width: clamp(32rem, 95vw, 120rem);
+	margin: 0 auto;
+	padding: 0;
+
+	// test styles
+	@include test-border;
+	padding-bottom: 10rem;
+}
+
+section + section {
+	margin-top: $section-gap;
+}
+
+// TODO: Move the styles to the components folder
+.intro {
+	display: flex;
+	gap: $step-child-gap;
+
+	& > * {
+		@include test-border;
+	}
+	&Spacer {
+		flex: 0 1 25%;
+		// flex: 1;
+	}
+	&Content {
+		flex: 1 1 75%;
+		// flex: 6;
+	}
+}
+// TODO: Move the styles to the components folder - END
+
+.step {
+	display: grid;
+	gap: $step-child-gap;
+	grid-template-columns: repeat(4, 1fr);
+	// align-items: stretch;
+
+	& > * {
+		@include test-border;
+	}
+
+	&Nav {
+		grid-column: 1/2;
+	}
+	&Body {
+		grid-column: 2/5;
+	}
+
+	// test styles
+	// background: $pastel-green;
+	@include test-border;
+	&:nth-child(odd) {
+		// background: $pastel-red;
+	}
+}
