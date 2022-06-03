@@ -6,10 +6,20 @@
 	width: clamp(32rem, 95vw, 120rem);
 	margin: 0 auto;
 	padding: 0;
+
+	// !test styles
+	// padding-bottom: 10rem;
+}
+
+section {
+	// padding: $section-gap 0;
 }
 
 // TODO: Move the styles to the components folder - END
 .section {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center;
 	& > .container {
 		display: grid;
 		gap: $step-child-gap;
