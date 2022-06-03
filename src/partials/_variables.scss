@@ -1,11 +1,8 @@
 // variables
 
-// colors
-$text: #2b2b2b; // remove later
-$background: #fff; // remove later
-$blue-accent: #4bbef3;
-$color-dark-60: hsl(0, 0%, 40%);
+// colors list
 
+// Neutral
 $color-nute-0: hsl(0, 0%, 0%);
 $color-nute-10: hsl(0, 0%, 10%);
 $color-nute-20: hsl(0, 0%, 20%);
@@ -17,6 +14,16 @@ $color-nute-70: hsl(0, 0%, 70%);
 $color-nute-80: hsl(0, 0%, 80%);
 $color-nute-90: hsl(0, 0%, 90%);
 $color-nute-100: hsl(0, 0%, 100%);
+
+// Accent
+
+// Theme
+$primary-dark: #000;
+$text: #2b2b2b; // remove later``
+$background: #fff; // remove later
+$step-bg-color-active: #c1dff5;
+$step-bg-color: #e0dddb;
+$btn-color: #262124;
 
 $color-dark-10: #0000001a; // remove later
 $color-secondary: #fff; // remove later
@@ -58,19 +65,4 @@ $step-body-col-size-min: 2fr;
 $section-step-block-width: 5rem;
 $section-step-block-height: 5rem;
 
-$window: 100vw;
-$main-content-width: 120rem;
-$margin-one-side: calc((#{$window} - #{$main-content-width}) / 2);
-$wrapper-content-length: 100rem;
-$wrapper-nav-length: calc(#{$main-content-width} - #{$wrapper-content-length});
-$wrapper-bg-length: calc(#{$wrapper-content-length} + #{$margin-one-side});
-$rect-height: 17.5rem;
-// Rectangle End
-
 $font-size-base: 62.5%;
-$column-gutter: 5rem;
-$column-width: calc($length-base * 12 + $column-gutter * 11);
-$page-margin: 30px;
-$bg-wrapper-height: 200px;
-$banner-height: 200px;
-$footer-banner-height: 200px;

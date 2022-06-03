@@ -1,13 +1,23 @@
 @import "../variables";
 @import "../mixins";
 
-.step {
+.section {
 	&3 &Media {
-		height: 90vh;
+		// height: 90vh;
 		grid-column: 1 / 2;
 	}
 	&6 &Media {
 		grid-column: 1 / 2;
+	}
+
+	&Intro {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&Title {
+		@include type-h1;
 	}
 
 	&Nav {
@@ -44,7 +54,7 @@
 			position: relative;
 
 			&-active {
-				background: $blue-accent;
+				background: $step-bg-color-active;
 			}
 			&-active ~ & {
 				// background: #000;

@@ -1,19 +1,24 @@
 // Typography
 
 @mixin type-base {
+	font-family: "Avenir", serif;
 	font-size: 1.6rem;
-	font-family: "Open Sans", sans-serif;
 	font-weight: 500;
 	line-height: 1.6;
 	color: $color-nute-20;
 }
 
+@mixin type-headings {
+	font-family: "Playfair Display", serif;
+	// font-weight: 500;
+}
+
 @mixin type-h1 {
-	font-size: 4rem;
+	font-size: 4.5rem;
 }
 
 @mixin type-h2 {
-	font-size: 3.25rem;
+	font-size: 3rem;
 }
 
 @mixin type-p {
@@ -26,12 +31,12 @@
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 
-	border: 2px solid $color-nute-30;
-	color: $color-nute-30;
+	border: 0.5px solid $primary-dark;
+	color: $btn-color;
 
 	&:hover {
-		background: $color-nute-30;
-		color: $color-nute-90;
+		// background: $color-nute-30;
+		// color: $color-nute-90;
 		transition: 0.2s ease all;
 	}
 }

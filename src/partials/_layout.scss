@@ -6,52 +6,26 @@
 	width: clamp(32rem, 95vw, 120rem);
 	margin: 0 auto;
 	padding: 0;
-
-	// test styles
-	padding-bottom: 10rem;
 }
 
-section + section {
-	margin-top: $section-gap;
-}
-
-// TODO: Move the styles to the components folder
-.intro {
-	display: flex;
-	gap: $step-child-gap;
-
-	& > * {
-	}
-	&Spacer {
-		flex: 0 1 25%;
-		// flex: 1;
-	}
-	&Content {
-		flex: 1 1 75%;
-		// flex: 6;
-	}
-}
 // TODO: Move the styles to the components folder - END
-
-.step {
-	display: grid;
-	gap: $step-child-gap;
-	grid-template-columns: repeat(4, 1fr);
-	// align-items: stretch;
-
-	& > * {
+.section {
+	& > .container {
+		display: grid;
+		gap: $step-child-gap;
+		grid-template-columns: repeat(4, 1fr);
 	}
 
+	&Spacer {
+		grid-column: 1/2;
+	}
+	&Intro {
+		grid-column: 2/5;
+	}
 	&Nav {
 		grid-column: 1/2;
 	}
 	&Body {
 		grid-column: 2/5;
-	}
-
-	// test styles
-	// background: $pastel-green;
-	&:nth-child(odd) {
-		// background: $pastel-red;
 	}
 }

@@ -1,6 +1,7 @@
 //  contains all the resets, colors, variables, mixins, and utility classes
-@import url("./variables");
-@import url("./mixins");
+@import "./variables";
+@import "./mixins";
+@import "./reset";
 
 * {
 	margin: 0;
@@ -28,6 +29,7 @@ ul {
 }
 
 a {
+	font-family: inherit;
 	color: inherit;
 	text-decoration: none;
 	&:hover,
@@ -48,12 +50,17 @@ img {
 }
 
 button {
+	color: inherit;
+	font-family: inherit;
 	cursor: pointer;
 	background: none; // remove later
 	border: unset;
 	padding: 1rem 2rem;
 }
 
+h1 {
+	@include type-headings;
+}
 p {
 	max-width: 60rem;
 }
