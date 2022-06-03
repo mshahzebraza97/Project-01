@@ -197,7 +197,7 @@ p {
 }
 
 .sectionNavItem + .sectionNavItem::before {
-  background: #e0dddb;
+  background: #c1dff5;
   position: absolute;
   content: "";
   width: 0.3rem;
@@ -213,6 +213,10 @@ p {
 
 .sectionNavItem-active ~ .sectionNavItem {
   border-color: #e0dddb;
+  background: #e0dddb;
+}
+
+.sectionNavItem-active ~ .sectionNavItem::before {
   background: #e0dddb;
 }
 

@@ -32,7 +32,7 @@
 			border: 2px solid $step-bg-color-active;
 			position: relative;
 			& + &::before {
-				background: $step-bg-color;
+				background: $step-bg-color-active;
 				position: absolute;
 				content: "";
 				width: 0.3rem;
@@ -61,6 +61,9 @@
 				border-color: $step-bg-color;
 				// content: "&#10004" !important;
 				background: $step-bg-color;
+				&::before {
+					background: $step-bg-color;
+				}
 			}
 		}
 		&Link {
