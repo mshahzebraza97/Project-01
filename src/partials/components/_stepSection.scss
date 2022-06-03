@@ -28,10 +28,11 @@
 		gap: $step-nav-item-gap;
 
 		&Item {
-			background: $color-nute-90;
+			background: transparent;
+			border: 2px solid $step-bg-color-active;
 			position: relative;
 			& + &::before {
-				background: $color-nute-90;
+				background: $step-bg-color;
 				position: absolute;
 				content: "";
 				width: 0.3rem;
@@ -57,8 +58,9 @@
 				background: $step-bg-color-active;
 			}
 			&-active ~ & {
-				// background: #000;
+				border-color: $step-bg-color;
 				// content: "&#10004" !important;
+				background: $step-bg-color;
 			}
 		}
 		&Link {

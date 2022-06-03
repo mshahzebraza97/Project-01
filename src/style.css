@@ -175,7 +175,8 @@ p {
 }
 
 .sectionNavItem {
-  background: #e6e6e6;
+  background: transparent;
+  border: 2px solid #c1dff5;
   position: relative;
   font-size: 2.5rem;
   font-weight: 500;
@@ -196,7 +197,7 @@ p {
 }
 
 .sectionNavItem + .sectionNavItem::before {
-  background: #e6e6e6;
+  background: #e0dddb;
   position: absolute;
   content: "";
   width: 0.3rem;
@@ -208,6 +209,11 @@ p {
 
 .sectionNavItem-active {
   background: #c1dff5;
+}
+
+.sectionNavItem-active ~ .sectionNavItem {
+  border-color: #e0dddb;
+  background: #e0dddb;
 }
 
 .sectionNavLink::before {

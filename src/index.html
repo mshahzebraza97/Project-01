@@ -24,7 +24,7 @@
 	<body  >
 		<main >
 			<div id="fullpage" >
-				<section class="section section1" id="section1">
+				<section class="section active section1" id="section1">
 					<div class="container">
                               <div class="sectionSpacer"></div>
                               <div class="sectionIntro">
@@ -326,14 +326,14 @@
                new fullpage('#fullpage', {
                     autoScrolling: true,
                     navigation: true,
-                    // anchors: [
-                    //      'section1', 
-                    //      'section2', 
-                    //      'section3',
-                    //      'section4',
-                    //      'section5',
-                    //      'section6'
-                    // ],
+                    anchors: [
+                         'section1', 
+                         'section2', 
+                         'section3',
+                         'section4',
+                         'section5',
+                         'section6'
+                    ],
                     // navigationTooltips: [
                     //      'section1', 
                     //      'section2', 
@@ -342,10 +342,6 @@
                     //      'section5',
                     //      'section6'
                     // ],
-                    // parallax: true,
-                    // onLeave: function(origin, destination, direction){
-                    //      console.log("Leaving section" + origin.index);
-                    // },
                });
 
           </script>
