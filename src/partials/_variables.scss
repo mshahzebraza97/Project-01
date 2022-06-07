@@ -17,12 +17,14 @@ $color-nute-100: hsl(0, 0%, 100%);
 
 // Accent
 
+$step-bg-color-prev: transparent;
+$step-bg-color-active: #c1dff5;
+$step-bg-color-next: #e0dddb;
+
 // Theme
 $primary-dark: #000;
 $text: #2b2b2b; // remove later``
 $background: #fff; // remove later
-$step-bg-color-active: #c1dff5;
-$step-bg-color: #e0dddb;
 $btn-color: #262124;
 
 $color-dark-10: #0000001a; // remove later
@@ -42,10 +44,27 @@ $pastel-brown: #d1b3b3; // remove later
 
 // end colors
 
-// sizes
-
-$breakpoint-mobile: 425px;
+$breakpoint-desktop: 1024px;
 $breakpoint-tablet: 768px;
+$breakpoint-mobile: 550px;
+$breakpoint-mobile-sm: 375px;
+
+// sizes
+// $media-desktop: "only screen and (max-width : 1024px)";
+// $media-desktop: "only screen and (max-width : {$breakpoint-tablet})";
+// $media-tablet: "only screen and (max-width : 768px)";
+// $media-mobile: "only screen and (max-width : 600px)";
+// $media-mobile-sm: "only screen and (max-width : 480px)";
+
+// Gaps, Margin & Padding
+$content-article-gap: clamp(0.75rem, 1.5vw, 2rem);
+$content-gap: clamp(0.75rem, 1.5vw, 2rem);
+$section-grid-gap: clamp(1.5rem, 3vw, 4rem);
+
+$btn-margin-top: clamp(1rem, 1.6vw, 3rem);
+
+$btn-pad-y: clamp(0.5rem, 1vw, 1rem);
+$btn-pad-x: clamp(1rem, 1vw, 2rem);
 
 // Rectangle
 
@@ -53,16 +72,24 @@ $container-width-min: 32rem;
 $container-width: 95vw;
 $container-width-max: 120rem;
 
-$step-child-gap: 4rem;
+$step-child-gap: clamp(2vw, 4rem, 4vw);
 $section-gap: 8rem;
 $section-height-min: 80vh;
-$step-nav-item-gap: 5rem;
+
+$nav-width: minmax(
+	5rem,
+	0.5fr
+); // decreasing 1fr to 0.5fr causes the other columns to expand
+$nav-step-gap: clamp(3rem, 4vw, 5rem);
+$nav-step-connector-height: $nav-step-gap;
+$nav-step-width: clamp(3.2rem, 4vw, 5rem);
+$nav-step-height: clamp(3.2rem, 4vw, 5rem);
 
 $step-body-grid-gap: 4rem;
 $step-body-col-size-max: 3fr;
 $step-body-col-size-min: 2fr;
 
-$section-step-block-width: 5rem;
-$section-step-block-height: 5rem;
+// $nav-step-width: 5rem;
+// $nav-step-height: 5rem;
 
 $font-size-base: 62.5%;

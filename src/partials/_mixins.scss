@@ -1,37 +1,56 @@
+@mixin responsive-lg($breakpoint) {
+	@media (min-width: $breakpoint) {
+		@content;
+	}
+}
+@mixin responsive($breakpoint) {
+	@media (max-width: $breakpoint) {
+		@content;
+	}
+}
+
 // Typography
 
 @mixin type-base {
-	font-family: "Avenir", serif;
-	font-size: 1.6rem;
+	font-family: "Avenir", /* "Roboto", "Open Sans" */ serif;
+	// font-size: 1.6rem;
+	font-size: clamp(1.1rem, 2vw, 1.6rem);
 	font-weight: 500;
 	line-height: 1.6;
 	color: $color-nute-20;
 }
 
 @mixin type-headings {
-	font-family: "Playfair Display", serif;
+	font-family: "Playfair Display", /*  "Lato"  */ serif;
 	// font-weight: 500;
 }
 
 @mixin type-h1 {
-	font-size: 4.5rem;
+	@include type-headings;
+	// font-size: 4.5rem;
+	font-size: clamp(2.4rem, 5.5vw, 4.5rem);
 }
 
 @mixin type-h2 {
-	font-size: 3rem;
+	// font-size: 3rem;
+	font-size: clamp(1.8rem, 3.8vw, 3rem);
 }
 
 @mixin type-p {
-	font-size: 1.6rem;
+	// font-size: 1.6rem;
+	font-size: clamp(1.1rem, 3.8vw, 1.6rem);
 }
 
 @mixin type-btn {
-	margin-top: 3rem;
-	padding: 1rem 2rem;
+	margin-top: $btn-margin-top;
+	// padding: 1rem 2rem;
+	padding: $btn-pad-y $btn-pad-x;
 
 	font-weight: 600;
 	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: 0.05em;
+	line-height: 1.2;
 
 	border: 0.5px solid $primary-dark;
 	color: $btn-color;
@@ -44,7 +63,12 @@
 }
 
 @mixin type-navItem {
-	font-size: 2.5rem;
+	// font-size: 2.5rem;
+	font-size: clamp(1.6rem, 3vw, 2.5rem);
+
+	@media screen and (max-width: 350px) {
+		font-weight: 700;
+	}
 	font-weight: 500;
 }
 

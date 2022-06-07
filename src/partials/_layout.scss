@@ -11,31 +11,57 @@
 	// padding-bottom: 10rem;
 }
 
-section {
-	// padding: $section-gap 0;
-}
-
 // TODO: Move the styles to the components folder - END
 .section {
 	display: flex !important;
 	justify-content: center !important;
 	align-items: center;
 	& > .container {
+		align-items: center;
+		max-height: 98vh;
 		display: grid;
 		gap: $step-child-gap;
-		grid-template-columns: repeat(4, 1fr);
+		// grid-template-columns: 1fr repeat(3, 1fr);
+		grid-template-columns: $nav-width repeat(3, 1fr);
+		// grid-template-rows: repeat(2, minmax(min-content, 20vh));
+		// grid-template-rows: max(20vh);
+		// grid-template-rows: minmax(1fr, 10rem) minmax(1fr, 10rem);
+		// grid-template-rows: repeat(auto-fill, minmax(1fr, 10rem));
+		// grid-template-rows: auto;
+		// grid-auto-rows: minmax(1fr, 20rem);
+		overflow: hidden;
+
+		// justify-items: center;
+		// align-items: center;
 	}
 
-	&Spacer {
-		grid-column: 1/2;
+	&:first-of-type {
+		.sectionBody {
+			max-height: 60vh;
+		}
 	}
+	&:not(:first-of-type) {
+	}
+
 	&Intro {
 		grid-column: 2/5;
+		// grid-row: 1/2;
 	}
 	&Nav {
 		grid-column: 1/2;
+		grid-row: 1/3;
 	}
 	&Body {
 		grid-column: 2/5;
+		// grid-row: 1/3;
+	}
+
+	&:first-of-type {
+		// .sectionIntro {
+		// 	grid-row: 1/2;
+		// }
+		.sectionBody {
+			// grid-row: 2/3;
+		}
 	}
 }
