@@ -22,6 +22,7 @@ body {
 	@include type-base;
 	color: $text;
 	background: $background;
+	scroll-behavior: smooth;
 }
 
 ul {
